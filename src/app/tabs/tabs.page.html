@@ -1,0 +1,56 @@
+<!-- <ion-tabs>
+  <ion-tab label="Home" icon="ios-notifications" href="app/tabs/(home:home)">
+    <ion-router-outlet name="home"></ion-router-outlet>
+  </ion-tab>
+  <ion-tab label="Classement" icon="information-circle" href="app/tabs/(rank:rank)">
+    <ion-router-outlet name="rank"></ion-router-outlet>
+  </ion-tab>
+  <ion-tab label="Aide" icon="contacts" href="app/tabs/(help:help)">
+    <ion-router-outlet name="help"></ion-router-outlet>
+  </ion-tab>
+</ion-tabs> -->
+
+<ion-tabs>
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home" href="/app/tabs/(home:home)">
+      <ion-icon name="calendar"></ion-icon>
+      <ion-label>home</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="rank" href="/app/tabs/(rank:rank)">
+      <ion-icon name="contacts"></ion-icon>
+      <ion-label>rank</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="jouer" href="/app/tabs/(jouer:jouer)">
+      <ion-icon name="map"></ion-icon>
+      <ion-label>jouer</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="about" href="/app/tabs/(about:about)">
+      <ion-icon name="information-circle"></ion-icon>
+      <ion-label>About</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+
+
+
+
+  <ion-tab tab="home">
+    <ion-router-outlet name="home"></ion-router-outlet>
+  </ion-tab>
+
+  <ion-tab tab="rank">
+    <ion-router-outlet name="rank"></ion-router-outlet>
+  </ion-tab>
+
+  <ion-tab tab="jouer">
+    <ion-router-outlet name="jouer"></ion-router-outlet>
+  </ion-tab>
+
+  <ion-tab tab="about">
+    <ion-router-outlet name="about"></ion-router-outlet>
+  </ion-tab>
+
+</ion-tabs>
