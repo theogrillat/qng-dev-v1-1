@@ -10,13 +10,13 @@ import { ShopPage } from '../shop/shop.page';
 
 const routes: Routes = [
   {
-    path: 'app',
+    path: '',
     component: TabsPage,
     children: [
       {
         path: '',
         redirectTo: '/tabs/(home:home)',
-        pathMatch: 'full',
+        pathMatch: 'full'
       },
       {
         path: 'home',
